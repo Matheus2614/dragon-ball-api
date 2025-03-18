@@ -4,10 +4,10 @@
 Este programa utiliza a API de Dragon Ball (Dragon Ball API), funciona colocando a idade (número de 1 a 100), o código gera um número aleatório e retorna um personagem da série. Serve para ser uma brincadeira divertida e ver qual personagem você é.
 ## Índice
 
-*[Funcionalidades](#Funcionalidades)
-*[Tecnologias](#Tecnologias)
-*[Autores](#Autores)
-*[Licença](#Licença)
+* [Funcionalidades](#Funcionalidades)
+* [Tecnologias](#Tecnologias)
+* [Autores](#Autores)
+* [Licença](#Licença)
 
 ## Funcionalidades
 A principal funcionalidade é o usuário colocar um número de 1 a 100, que representa sua idade, e retornar um personagem de Dragon Ball
