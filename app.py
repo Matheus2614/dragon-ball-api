@@ -15,13 +15,15 @@ def submit():
 
     idade = int(request.form.get('idade'))
 
-    if idade > 30 or idade < 0:
+    if idade > 100 or idade < 0:
         return render_template('index.html', erro="Você deve colocar uma idade válida!")
     
     else:
-        numero_aleatorio = random.randint(0,18)
-        
+        idade = 0
+
+        numero_aleatorio = random.randint(0,57)
         personagem = idade + numero_aleatorio
+        print(personagem)
         response = requests.get(API + str(personagem))
 
     if response.status_code == 200:
