@@ -19,7 +19,7 @@ def submit():
         return render_template('index.html', erro="Você deve colocar uma idade válida!")
     
     else:
-        numero_aleatorio = random.randint(0,28)
+        numero_aleatorio = random.randint(0,18)
         
         personagem = idade + numero_aleatorio
         response = requests.get(API + str(personagem))
