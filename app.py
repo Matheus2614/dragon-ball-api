@@ -22,10 +22,17 @@ def submit():
     else:
         idade = 0
 
-        numero_aleatorio = random.randint(0,58)
+        numero_aleatorio = random.randint(1,44)
         personagem = idade + numero_aleatorio
         print(personagem)
-        response = requests.get(API + str(personagem))
+
+        if personagem == 36 or personagem == 41:
+            personagem = idade + numero_aleatorio
+            response = request.get(API + str(personagem))
+
+        else:
+            response = requests.get(API + str(personagem))
+
 
     if response.status_code == 200:
         data = response.json()
