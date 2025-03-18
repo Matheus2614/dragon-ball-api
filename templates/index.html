@@ -27,23 +27,28 @@
                 </form>
             </div>
 
-            {% if personagem %}
+            {% if erro %}
+            <div class="card">
+                <img src="../static/img/shenlong.jpg" alt="">
+                <div class="card-body">
+                    <p>{{erro}}</p>
+                </div>
+            </div>
+            {% elif personagem %}
             <div class="card">
                 <h1>{{nome}}</h1>
                 <img src="{{ img }}" alt="{{ nome }}">
                 <div class="card-body">
                     <p>Raça: {{race}}</p>
                     <p>KI: {{ki}}</p>
-                    {% elif not personagem %}
-                    <div class="card">
-                        <img src="../static/img/shenlong.jpg" alt="">
-                        <div class="card-body">
-                            <h2>Descubra seu personagem!</h2>
-                        </div>
-                    </div>
-                    {% else %}
-                    <p>{{erro}}</p>
-                    {% endif %}
+            {% else %}
+            <div class="card">
+                <img src="../static/img/shenlong.jpg" alt="">
+                <div class="card-body">
+                    <h2>Descubra seu personagem!</h2>
+                </div>
+            </div>
+            {% endif %}
                 </div>
             </div>
 
